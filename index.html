@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rictima Karmakar — Portfolio</title>
+  <meta name="description" content="Portfolio of Rictima Karmakar — MCA student, Web & Data Science projects" />
+  <style>
+    :root{--accent:#0b76ff;--bg:#ffffff;--muted:#6b7280;--container:1100px}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;margin:0;color:#0f172a;background:var(--bg)}
+    .container{max-width:var(--container);margin:0 auto;padding:0 1rem}
+    header.site-header{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(6px);border-bottom:1px solid #eee;z-index:40}
+    .site-header .inner{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0}
+    .logo{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.15rem}
+    nav.nav{display:flex;gap:1rem}
+    nav.nav a{text-decoration:none;color:inherit}
+    .hamburger{display:none;background:none;border:0;font-size:1.2rem}
+
+    .hero{padding:4.5rem 0;text-align:left}
+    .hero-grid{display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:center}
+    .hero h1{font-size:2rem;margin:0 0 .5rem}
+    .hero p.lead{margin:0 0 1rem;color:var(--muted)}
+    .cta{display:inline-block;padding:.6rem 1rem;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+
+    .card{background:#fff;border-radius:10px;padding:1rem;box-shadow:0 8px 30px rgba(2,6,23,0.06)}
+
+    .about{display:grid;grid-template-columns:1fr;gap:1rem}
+    .meta-list{display:flex;flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none}
+    .meta-list li{background:#f3f4f6;padding:.35rem .6rem;border-radius:999px;font-size:.9rem}
+
+    .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .project-card img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+    .project-card h3{margin:.5rem 0}
+
+    .skills-list{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;list-style:none}
+    .skills-list li{background:#f8fafc;padding:.45rem .7rem;border-radius:999px;font-weight:600}
+
+    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:1rem}
+    form{display:grid;gap:.6rem}
+    input,textarea{width:100%;padding:.6rem;border:1px solid #e6e9ef;border-radius:8px;font-family:inherit}
+    button.btn{padding:.6rem 1rem;border-radius:8px;background:var(--accent);color:#fff;border:0}
+
+    footer{padding:1rem 0;text-align:center;border-top:1px solid #eee;margin-top:2rem;color:var(--muted)}
+
+    @media (max-width:980px){.hero-grid{grid-template-columns:1fr} .projects-grid{grid-template-columns:repeat(2,1fr)} .contact-grid{grid-template-columns:1fr} }
+    @media (max-width:640px){nav.nav{display:none}.hamburger{display:block}.projects-grid{grid-template-columns:1fr}}
+
+    .muted{color:var(--muted)}
+    .small{font-size:.9rem}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container inner">
+      <a class="logo" href="#home">Rictima Karmakar</a>
+      <nav class="nav" id="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#education">Education</a>
+      </nav>
+      <button id="hamburger" class="hamburger" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-grid">
+        <div>
+          <h1>Hi — I'm <strong>Rictima Karmakar</strong></h1>
+          <p class="lead">2nd year MCA student at Brainware University. Web developer & data-science enthusiast building ML-powered apps and responsive web experiences.</p>
+          <p class="small muted">Phone: +91 81165 45743 • Email: <a href="mailto:karmakarrictima@gmail.com">karmakarrictima@gmail.com</a></p>
+          <p style="margin-top:.8rem"><a class="cta" href="#projects">View Projects</a></p>
+        </div>
+        <aside class="card" style="text-align:left">
+          <h3 style="margin-top:0">Snapshot</h3>
+          <ul class="meta-list" style="margin-top:.5rem">
+            <li>MCA — Brainware University</li>
+            <li>8.97 / 10 (MCA)</li>
+            <li>Location: Jamalpur, Burdwan</li>
+          </ul>
+          <div style="margin-top:1rem;font-size:.95rem">
+            <p class="small muted">Available for internships & collaborative projects.</p>
+            <p style="margin:0.6rem 0" class="small"><a href="#contact">Contact me</a></p>
+            <p class="small muted">GitHub: <a href="https://github.com/rictima" target="_blank">github.com/rictima</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="education" class="container" style="margin-top:1.25rem">
+      <div class="card">
+        <h2 style="margin-top:0">Education</h2>
+        <p style="margin:.25rem 0"><strong>Master of Computer Applications (MCA)</strong> — Brainware University, Kolkata (2024–2026) • 8.97/10</p>
+        <p style="margin:.25rem 0"><strong>B.Sc. (Hons)</strong> — Burdwan University (2021–2024) • 8.33/10</p>
+        <p style="margin:.25rem 0" class="small muted"><strong>12th </strong>— (WBCHSE) (2021) • 91.2% </p>
+        <p style="margin:.25rem 0" class="small muted"><strong>10th </strong>— (WBBSE) (2019) • 72.14%</p>
+      </div>
+    </section>
+
+    <section id="projects" class="container" style="margin-top:1.25rem">
+      <h2>Projects & Experience</h2>
+      <div class="projects-grid" style="margin-top:.75rem">
+        <article class="project-card card">
+          <h3>Music Genre Classification Web App</h3>
+          <p class="small muted">Streamlit app that classifies music genres using Librosa for feature extraction and Random Forest for prediction. Integrated custom HTML/CSS for UI enhancement.</p>
+          <p style="margin:.4rem 0"><a href="https://github.com/rictima" target="_blank">View code</a></p>
+        </article>
+
+        <article class="project-card card">
+          <h3>AI-Powered Chemical Reaction Prediction</h3>
+          <p class="small muted">Developed dataset schema, database integration, and AI models to predict reaction outcomes and optimize green chemistry workflows. Paper published (June 2025).</p>
+          <p style="margin:.4rem 0"><a href="https://github.com/rictima" target="_blank">Read paper</a></p>
+          
+        </article>
+        <article class="project-card card">
+          <h3>Lightweight 5G Network Slicing Framework for
+ Smart Home Connectivity</h3>
+          <p class="small muted">
+• Designed and implemented a Python-based simulation model for adaptive 5G network slicing in a smart home environment.<br>
+• Developed complete code for traffic generation, resource allocation, and visualization of slicing performance.<br>
+• Analyzed simulation outputs to evaluate QoS, fairness, and monthly data usage for multiple device categories.
+</p>
+
+          <p style="margin:.4rem 0"><a href="https://github.com/rictima" target="_blank">Read paper</a></p>
+        </article>
+
+        <article class="project-card card">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Data science internship">
+          <h3>Data Science Intern — ARDENT COMPUTECH PVT LTD</h3>
+          <p class="small muted">(July–Aug 2025) Worked on data preprocessing, feature engineering, model training with scikit-learn, and visualization with Matplotlib & Seaborn to support predictive analytics.</p>
+          <p style="margin:.4rem 0"><a href="https://github.com/rictima" target="_blank">Certificate</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container" style="margin-top:1.25rem">
+      <div class="card">
+        <h2 style="margin-top:0">Technical Skills</h2>
+        <p class="small muted">Languages & Tools</p>
+        <ul class="skills-list" style="margin-top:.6rem">
+          <li>Python</li><li>Java (Basics)</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>DBMS</li><li>DSA</li>
+        </ul>
+        <div style="margin-top:1rem">
+          <p class="small muted">Additional</p>
+          <ul class="skills-list" style="margin-top:.5rem">
+            <li>Git & GitHub</li><li>Streamlit</li><li>Librosa</li><li>scikit-learn</li><li>React.js</li><li>BongoTV</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container" style="margin-top:1.25rem">
+      <h2>Contact</h2>
+      <div class="contact-grid" style="margin-top:.6rem">
+        <div class="card">
+          <form id="contactForm">
+            <label class="small">Name<input name="name" placeholder="Your name" required></label>
+            <label class="small">Email<input name="email" type="email" placeholder="Your email" required></label>
+            <label class="small">Message<textarea name="message" rows="5" placeholder="Message" required></textarea></label>
+            <div style="display:flex;gap:.5rem;align-items:center">
+              <button class="btn" type="submit">Send</button>
+              <div id="formMessage" class="small muted" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+        <aside class="card small muted">
+          <h3 style="margin-top:0">Get in touch</h3>
+          <p style="margin:.25rem 0">Phone: +91 81165 45743</p>
+          <p style="margin:.25rem 0">Email: <a href="mailto:karmakarrictima@gmail.com">karmakarrictima@gmail.com</a></p>
+          <p style="margin:.25rem 0">Address: Jamalpur, Burdwan, West Bengal — 713404</p>
+          <p style="margin:.25rem 0">Languages: English, Bengali, Hindi</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container small muted">© <span id="year"></span> Rictima Karmakar — Built with HTML, CSS & JavaScript • <a href="https://github.com/rictima" target="_blank">GitHub</a></div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', ()=>{ nav.style.display = nav.style.display === 'flex' ? '' : 'flex'; nav.style.flexDirection = 'column'; nav.style.gap = '0.6rem'; });
+    const cards = document.querySelectorAll('.project-card');
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => { if(entry.isIntersecting){ entry.target.style.transform='translateY(0)'; entry.target.style.opacity=1; obs.unobserve(entry.target); }});
+    }, {threshold:0.12});
+    cards.forEach(c=>{ c.style.opacity=0; c.style.transform='translateY(16px)'; io.observe(c); });
+
+    const form = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    form.addEventListener('submit', e=>{
+      e.preventDefault();
+      const data = new FormData(form);
+      const name = data.get('name');
+      const email = data.get('email');
+      const message = data.get('message');
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' (' + email + ')');
+      window.location.href = `mailto:karmakarrictima@gmail.com?subject=${subject}&body=${body}`;
+      formMessage.textContent = 'Opening email client...';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
